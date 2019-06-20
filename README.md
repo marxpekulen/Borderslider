@@ -1,10 +1,10 @@
-#Borderslider 
+# Borderslider 
 Borderslider is an animation plugin for bottom borders in navbars
 
-##Dependencies
+## Dependencies
 - jQuery 1.12.1 or higher
 
-##Usage
+## Usage
 ```
 $(".element-with-links").borderSlider({
   "element" : ".link"
