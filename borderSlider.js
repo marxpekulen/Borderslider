@@ -1,20 +1,32 @@
+/**
+ * Borderslider v1.0.1
+ * Copyright 2019 Maxim Pikulin
+ * Licensed under: SEE LICENSE IN https://github.com/marxpekulen/Borderslider/blob/master/LICENSE
+ */
+
 (function( $ ) {
 	$.fn.borderSlider = function(options) {
-		console.log(1);
+
 		var settings = $.extend({
-	      'element' : ''
+	      'line' : '.navbar-line',
+	      'height' : '4px',
+	      'backgroundColor' : 'red',
+	      'transition' : '.3s ease-in-out'
 	    }, options);
 
 		return this.each(function() {
 
 		    var navElement = $(this).children("li"),
 		    	fisrtNavElementW = $(this).children("li").eq(0).width(),
-		    	sliderLine = $(settings.element);
+		    	sliderLine = $(settings.line);
 
 		    sliderLine.css({
-		    	"transition" : ".3s ease-in-out",
+		    	"transition" : settings.transition,
 		    	"position" : "absolute",
-		    	"bottom" : "4px",
+		    	"bottom" : "0",
+		    	"height" : settings.height,
+		    	"position" : "absolute",
+		    	"background-color" : settings.backgroundColor
 
 		    });
 

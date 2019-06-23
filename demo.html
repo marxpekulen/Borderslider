@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Borderslider</title>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	
+	<nav class="navbar">
+		<span class="navbar-line"></span>
+		<ul class="navbar-list">
+			<li>
+				<a href="#">Hover it!</a>
+			</li>
+			<li>
+				<a href="#">About Us</a>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+		</ul>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="borderSlider.js"></script>
+	<script>
+		$(".navbar-list").borderSlider({
+			line : ".navbar-line",
+			height : "4px",
+			backgroundColor : "#69c",
+			transition : ".3s ease-in-out"
+		});
+	</script>
+</body>
+</html>
