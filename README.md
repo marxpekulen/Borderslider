@@ -1,5 +1,5 @@
 # Borderslider 
-Borderslider is an navbars animation plugin for sliding bottom border on hover
+Borderslider is an navbars animation jQuery plugin for sliding bottom border on hover
 
 <a href="https://marxpekulen.github.io/Borderslider" target="_blank">Demo</a>
 
